@@ -1,0 +1,98 @@
+/*Cabeçalho*/
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative; /*pois o menu tem posicionamento relativo*/
+    width: 940px; /* largura padrao para centralizar*/
+    margin: 0 auto; /*encima e embaixo 0, esquerda e direita auto*/
+}
+
+nav {
+    position: absolute; 
+    top: 125px; /*para centralizar com o logo, dividi o tamanho dele (250) no meio*/
+    right: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+/*Conteudo*/
+
+.produtos{
+    margin: 0 auto;
+    width: 960px; /*nao funcionou com 960 para ficar um ao lado do outro, mas funcionou com 1000. OBS apoós o box-sizing na lista, funcionou com 960*/
+    padding: 50px 0; /*baixo, lados*/
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%; /*ocupará 1/3 da página*/
+    vertical-align: top;
+    margin-left: 20px; /*não estava no curso, add pois ficou melhor para afastar os elementos*/
+
+    /*bordas*/
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: #000000 solid 2px;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: #C78C19;
+
+}
+
+.produtos li:active {
+    border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+    font-size: 32px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold; /*estilo de fonte em negrito*/
+
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*Rodapé*/
+footer{
+    text-align: center;
+    background: url("/home/gio/Desenvolve Boticario/Barbearia Alura/imagem_produtos/bg.jpg");
+    padding: 40px 0;
+}
+.copyringht {
+    color: #BBBBBB;
+    font-size: 13px;
+}
