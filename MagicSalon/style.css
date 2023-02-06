@@ -70,7 +70,7 @@ main {
 
 h2 {
     text-align: center;
-    padding-top: 4%;
+    padding-top: 2%;
 }
 
 #intro {
@@ -108,4 +108,44 @@ p {
     margin-left: 5em;
     width: 550px;
     font-size: 50px;
+}
+
+.produtos{
+
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%; 
+    vertical-align: top;
+
+
+    /*bordas*/
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 5px solid transparent;
+    font-size: 20px;
+    background-color: transparent;
+    border-image: url("/home/gio/Desenvolve Boticario/Desenvolve/MagicSalon/Imagens/Borda.jpg") 15 repeat;
+    border-radius: 10px;
+    
+}
+
+.imagem-produtos{
+
+    width: 220;
+    height: 250px;
+    padding-right: 30px;
+
+}
+
+h2{
+    font-size: 20px;
+    font-weight: bold; /*estilo de fonte em negrito*/
+    
 }
