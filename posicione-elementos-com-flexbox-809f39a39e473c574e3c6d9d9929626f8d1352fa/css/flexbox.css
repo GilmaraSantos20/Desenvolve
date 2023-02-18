@@ -1,0 +1,112 @@
+.cabecalhoPrincipal .container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /*alinhou a caixa de menu e titulo*/
+}
+
+.cabecalhoPrincipal nav {
+    display: flex; /*alinhou os itens do menu na horizontal*/
+}
+
+/*RODAPÉ*/
+.rodapePrincipal-patrocinadores-list{ /*alinhou os itens da lista de patrocinadores*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5px;
+}
+    
+.rodapePrincipal-contatoForm-fieldset { /*alinhou o formulario com os patrocinadores*/
+    display: flex;
+    
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    height: 250px; /*delimita a altura da caixa*/
+    flex-flow: column wrap; /*transforma numa coluna que quebra quando ultrapassa a altura */
+}
+
+/*CURSOS*/
+.conteudoPrincipal-cursos { /*quero em formato de linhas*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%; /*os itens estavam todos juntos, defini o tamanho deles para se alinharem*/
+    
+}
+
+.videoSobre .container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.videoSobre-sobre {
+    width: 30%;
+    padding-left: 15%;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    
+    .cabecalhoPrincipal .container {
+        flex-direction: column;  
+        align-items: initial;
+        text-align: center;
+    }
+   
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+
+    .rodapePrincipal-patrocinadores-list {
+        flex-wrap: wrap;
+        justify-content: normal;
+        width: 100%;
+        justify-content: normal;
+       
+    }
+ 
+    .rodapePrincipal-patrocinadores-list li {
+        padding-right: 2%;
+        margin: 0px;
+    } 
+
+    .rodapePrincipal-contatoForm-emailInput {
+        font-size: 80%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        padding-left: 10%;
+    }
+    
+    .rodapePrincipal-contatoForm-legend {
+        padding-left: 25%;
+    }
+
+    .videoSobre-video {
+        width: 100%;
+    }
+
+    .videoSobre-sobre {
+        width: 100%;
+        padding: 0;
+    }
+}
