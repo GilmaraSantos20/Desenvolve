@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.cabecalho__principal .container {
+    background: #1D0100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    
+
+.menu-itens {
+    color: rosybrown;
+    height: 5em;
+}
+
+.menu-logo {
+    margin: 0;
+    width: 5%;
+    height: 50px;
+    align-self: baseline;
+}
+
+.menu-logo img {
+    height: 200%;
+}
+
+
+
+
+
+
+

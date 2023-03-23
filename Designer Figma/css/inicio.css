@@ -1,0 +1,22 @@
+.container-inicial {
+   display: flex;
+   padding-left: 120px;
+}
+
+
+.titulo-principal {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container-inicial p {
+    width: 471px;
+    line-height: 26px;
+    color: var(--cinzaTexto);
+}
+
+
+.fundo-inicial img {
+    width: 100%;
+    width: 754px;
+}
