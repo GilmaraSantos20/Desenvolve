@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pularLinha();
+    }
+    
+    var totalGastos = 0;
+
+    var totalEventos = parseInt(prompt("Qual o total de eventos?"));
+
+    for(var i= 1; i<=totalEventos; i++) {
+        var gastos = parseFloat(prompt("Quanto foi gasto no evento " + i + "?"));
+        totalGastos = totalGastos + gastos;
+    }
+
+    mostra("O total de gastos é: " + totalGastos);
+    mostra("A média de gastos por evento é de: " + totalGastos / totalEventos);
+
+</script>

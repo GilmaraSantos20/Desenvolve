@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+    <!--
+        O programa irá calcular as comissoes de uma vendedora.
+        Se não bater a meta ganha 1%
+        Se bater ganha 2%
+        Se bater a Seper Meta ganha 2,5% 
+    -->
+
+<script>
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pularLinha();
+    }
+
+    var meta = parseFloat(prompt("Quanto é a meta?"));
+    var vendas = parseFloat(prompt("Quanto você vendeu?"));
+
+    var superMeta = meta + (meta / 100) * 20;
+    var comissao = 0;
+    
+    if(vendas == meta && vendas < superMeta) {
+        comissao = (vendas / 100) * 2; 
+        mostra("Parabens, você bateu a meta! sua comissão é: " + comissao);
+        brack
+    }
+
+    else if(vendas >= superMeta) {
+        comissao = (vendas / 100) * 2.5;
+        mostra("Parabens, você bateu a SUPER META! sua comissão é: " + comissao);
+        brack 
+    }
+
+    else {
+        comissao = (vendas / 100) * 1;
+        mostra("Poxa, infelizmente você não bateu a meta, sua comissão é: " + comissao);
+
+    }
+
+    
+
+
+</script>
